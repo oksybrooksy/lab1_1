@@ -3,31 +3,31 @@ package pl.com.bottega.ecommerce.sales.domain.offer;
 import java.util.Date;
 
 public class Product {
-    private String productId;
-    private String productName;
-    private String productType;
-    private Date productSnapshotDate;
+    private String id;
+    private String name;
+    private String type;
+    private Date snapshotDate;
 
     public Product(String productId, String productName, String productType, Date productSnapshotDate) {
-        this.productId = productId;
-        this.productName = productName;
-        this.productType = productType;
-        this.productSnapshotDate = productSnapshotDate;
+        this.id = productId;
+        this.name = productName;
+        this.type = productType;
+        this.snapshotDate = productSnapshotDate;
     }
 
-    public String getProductId() {
-        return productId;
+    public String getId() {
+        return id;
     }
 
-    public String getProductName() {
-        return productName;
+    public String getName() {
+        return name;
     }
 
-    public String getProductType() {
-        return productType;
+    public String getType() {
+        return type;
     }
 
-    public Date getProductSnapshotDate() {
-        return productSnapshotDate;
+    public Date getSnapshotDate() {
+        return snapshotDate;
     }
 }
