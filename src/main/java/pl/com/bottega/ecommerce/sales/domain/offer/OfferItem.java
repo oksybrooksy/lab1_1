@@ -28,7 +28,6 @@ public class OfferItem {
     private String currency;
 
     // discount
-    private String discountCause;
 
     private BigDecimal discount;
 
@@ -41,7 +40,6 @@ public class OfferItem {
         this.productPrice = productPrice;
         this.quantity = quantity;
         this.discount = discount;
-        this.discountCause = discountCause;
 
         BigDecimal discountValue = new BigDecimal(0);
         if (discount != null) {
@@ -65,10 +63,6 @@ public class OfferItem {
 
     public BigDecimal getDiscount() {
         return discount;
-    }
-
-    public String getDiscountCause() {
-        return discountCause;
     }
 
     public int getQuantity() {
