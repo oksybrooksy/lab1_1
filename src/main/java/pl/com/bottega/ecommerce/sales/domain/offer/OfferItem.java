@@ -141,8 +141,8 @@ public class OfferItem {
             return false;
         }
 
-        BigDecimal max;
-        BigDecimal min;
+        Money max;
+        Money min;
         if (totalCost.compareTo(other.totalCost) > 0) {
             max = totalCost;
             min = other.totalCost;

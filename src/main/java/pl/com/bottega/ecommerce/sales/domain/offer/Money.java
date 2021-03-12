@@ -1,6 +1,6 @@
 package pl.com.bottega.ecommerce.sales.domain.offer;
 
-public class Money {
+public class Money implements Comparable {
     private String currency;
     private double amount;
 
@@ -15,5 +15,10 @@ public class Money {
 
     public double getAmount() {
         return amount;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
