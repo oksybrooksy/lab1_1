@@ -25,8 +25,6 @@ public class OfferItem {
 
     private BigDecimal totalCost;
 
-    private String currency;
-
     // discount
 
     private BigDecimal discount;
@@ -55,10 +53,6 @@ public class OfferItem {
 
     public BigDecimal getTotalCost() {
         return totalCost;
-    }
-
-    public String getTotalCostCurrency() {
-        return currency;
     }
 
     public BigDecimal getDiscount() {
