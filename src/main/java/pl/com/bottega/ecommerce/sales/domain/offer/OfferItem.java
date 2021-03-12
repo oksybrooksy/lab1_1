@@ -45,20 +45,22 @@ public class OfferItem {
             discountValue = discountValue.subtract(discount);
         }
 
-        this.totalCost = productPrice.multiply(new BigDecimal(quantity)).subtract(discountValue);
+        this.totalCost = productPrice.multiply(new Money(quantity)).subtract(discountValue);
     }
 
     public BigDecimal getProductPrice() {
         return productPrice;
     }
 
-    public BigDecimal getTotalCost() {
+    public Money getTotalCost() {
         return totalCost;
     }
 
     public BigDecimal getDiscount() {
         return discount;
     }
+
+    public Product getProduct(){ return product;}
 
     public int getQuantity() {
         return quantity;

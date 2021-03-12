@@ -1,5 +1,7 @@
 package pl.com.bottega.ecommerce.sales.domain.offer;
 
+import java.math.BigDecimal;
+
 public class Money implements Comparable {
     private String currency;
     private double amount;
@@ -20,5 +22,11 @@ public class Money implements Comparable {
     @Override
     public int compareTo(Object o) {
         return 0;
+    }
+
+    public BigDecimal subtract(Money min) {
+    }
+
+    public BigDecimal multiply(BigDecimal valueOf) {
     }
 }
